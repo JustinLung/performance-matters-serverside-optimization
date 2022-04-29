@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/JustinLung/the-web-is-for-everyone-scrollbook.git"
   },
-  "keywords": ["Scrollbook", "Scrollbook Dashboard", "NodeJS", "Express"],
+  "keywords": [
+    "Scrollbook",
+    "Scrollbook Dashboard",
+    "NodeJS",
+    "Express"
+  ],
   "author": "Daan Korver & Justin Lung",
   "license": "ISC",
   "bugs": {
@@ -23,7 +28,8 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "postcss": "^8.4.12"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
