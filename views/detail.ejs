@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs') %>
+
+  <main class="detail-main">
+    <figure>
+      <img src="https://raw.githubusercontent.com/JustinLung/the-web-is-for-everyone-scrollbook<%=book[0].book_cover%>"
+        alt="Book Cover" class="book-cover">
+    </figure>
+    <section class="detail-section">
+      <p class="year">
+        <%= book[0].release_date.slice(0, 4) %>
+      </p>
+      <p class="writer">
+        <%= `${book[0].author_name} ${book[0].author_surname}` %>
+      </p>
+      <h1 class="book-title">
+        <%= book[0].name %>
+      </h1>
+      <p class="synopsis-heading">Synopsis</p>
+      <p class="synopsis">
+        <%= book[0].synopsis %>
+      </p>
+      <p class="rate-heading">Rating</p>
+      <p class="rating">
+        <%=`${book[0].rating}/5` %>
+      </p>
+      <a href="/" class="cta">Try Book Preview</a>
+    </section>
+    <div class="arrow-container">
+      <% if(previous.length !==0) { %>
+        <a href="/book/<%= previous[0].book_id %> "><img src="/assets/arrow-left.svg" alt="Arrow Left"
+            class="arrow-left">Previous Book</a>
+        <% } %>
+          <% if(next.length !==0) { %>
+            <a href="/book/<%= next[0].book_id %> "><img src="/assets/arrow-right.svg" alt="Arrow Right"
+                class="arrow-right">Next Book</a>
+            <% } %>
+    </div>
+  </main>
+
+  <%- include('partials/footer.ejs') %>

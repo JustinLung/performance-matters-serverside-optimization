@@ -1,69 +1,80 @@
+# ScrollBook Bookshelf
 
-# Performance Matters - Serverside optimization
-
-Een deeltaak waarin je drie server-side performance optimalisaties toepast op jouw project.
+![ScrollBook](https://github.com/fdnd-task/the-startup-scrollbook/blob/cbd43c0fe60f97f8f9715fed8e85443dfc48d3ed/docs/scrollbook.png)
 
 ## Context
+Deze leertaak hoort bij sprint The Web is for Everyone. Dit is een autonomous leertaak die je individueel uitvoert voor ScrollBook.
 
-Deze leertaak hoort bij sprint 10 Performance Matters. Dit is een deeltaak die je individueel uitvoert.
+## Briefing
+Scrollbook is een concept en interactief prototype ontwikkeld om jongeren te enthousiasmeren om te lezen ter ontspanning en diep lezen te bevorderen. Deze kan individueel gebruikt worden op tablet om de grootte van een boek te imiteren en daarbij de ervaring te vergroten. 
 
-In het college S10W1-02-server-side-performance wordt behandeld hoe je server-side optimalisatie kan toepassen.
+Ieder boek dat te vinden is in het prototype bevat een book-trailer/ book preview. Hierdoor kan de gebruiker een voorproefje ervaren van het boek, voordat zij hier tijd in investeren. Deze trailer moet de ervaring vergroten en het verhaal verkopen, zoals een film trailer dat ook zal doen. 
 
+Voor deze sprint ligt de focus op het dynamisch maken van de content. De verschillende booktrailers worden met client side JavaScript opgehaald uit de [ScrollBook REST API](https://scrollbook.api.fdnd.nl/) en de HTML pagina's worden dynamisch gerender op basis van de data uit de API. 
 
+Experimenteer met verschillende vormen van digitaal lezen, interactie en animatie om het leesplezier onder jongeren te vergroten. Bouw de boek ervaring en test de werking hier van. Neem de prototype boek ervaringen als uitgangspunt en houd je aan de vastgestelde vormgeving en opzet. 
+ 
+Je presenteert je bevindingen in een werkend HTML, CSS en JavaScript prototype.
 
 ## Doel van deze opdracht
+Je leert hoe je een prototype maakt op basis van een user story en externe data uit een API.
 
-Je hebt geleerd dat *Performance* een heel belangrijk aandachtspunt is bij het bouwen van websites. In deze opdracht leer je in een paar stappen laag hangend performance fruit te pakken. Met een aantal relatief simpele ingrepen kan je jouw website performance verbeteren. 
+## Planning
 
-Het resultaat is gegarandeerd het sneller inladen van jouw website!
+<table>
+    <tr>
+        <td colspan="4"><b>Week 1</b></td>
+    </tr>
+    <tr>
+        <td>Maandag</td>
+        <td>7 maart</td>
+        <td>13:00 uur *</td>
+        <td>Briefing</td>
+    </tr>
+    <tr>
+        <td>Dinsdag</td>
+        <td>8 maart</td>
+        <td>13:00 uur *</td>
+        <td>Debriefing</td>
+    </tr>
+    <tr>
+        <td colspan="4"><b>Week 2</b></td>
+    </tr>
+    <tr>
+        <td>Dinsdag, woensdag of donderdag</td>
+        <td>15 maart</td>
+        <td>13:00 uur *</td>
+        <td>Feedbacksessie</td>
+    </tr>
+    <tr>
+        <td colspan="4"><b>Week 3</b></td>
+    </tr>
+    <tr>
+        <td>Donderdag</td>
+        <td>24 maart</td>
+        <td>13:00 uur *</td>
+        <td>Oplevering</td>
+    </tr>
+</table>
+* vanaf 13:00 uur
 
 ## Werkwijze
+Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
-Opdracht: Implementeer vier serverside performance optimalisaties: Minifying, Code splitting, Caching en Compressie.
+### Analyseren
+*In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.*
 
-
-Deze opdracht gaat over de [bouw](#bouwen) fase van de DLC.
-
-
+### Ontwerpen
+*In de ontwerpfase neem je ontwerpbeslissingen en zorg je dat je precies weet wat je moet gaan bouwen.*
 
 ### Bouwen
+*In de bouwfase realiseer je de beslissingen uit de ontwerpfase.*
 
-Voor deze opdracht voer je vier performance optimalisaties uit op een bestaand project. Kies een bestaand project uit jouw Github account om de optimalisaties op uit te voeren. Begin met een [Performance Audit](https://github.com/fdnd-task/performance-matters-performance-audit)
+### Integreren
+*In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.*
 
-
-<details>
-<summary>Aanpak</summary>
-
-1. Minify jouw CSS door gebruik te maken van PostCSS (optioneel: minify ook je client-side javascript).
-2. Pas handmatig code-splitting toe op client-side javascript bestanden zodat alleen zaken worden ingeladen die écht gebruikt worden.
-3. Verstuur cache-control headers bij GET requests naar jouw website, kies beargumenteerd een max-age.
-4. Pas compressie toe. (optioneel: kies de juiste compressie aan de hand van het request)
-
-#### Materiaal bouwfase
-
-- [How to minify CSS with Node.js @ benborgers.com](https://benborgers.com/posts/node-minify-css)
-- [Code splitting @ MDN](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
-- [Cache headers in Express js app @ Regbrain.com](https://regbrain.com/article/cache-headers-express-js)
-- [Gzip compression with Node.js @ victorvr.com](https://www.victorvr.com/tutorial/compresion-gzip-con-nodejs)
-- [Node.js compression middleware @ expressjs.com](http://expressjs.com/en/resources/middleware/compression.html)
-- [Compression @ npmjs.com](https://www.npmjs.com/package/compression)
-
-</details>
-
-
+### Testen
+*In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.*
 
 ## Criteria
-
-Focus sprint 10 - De focus van deze sprint ligt op het beter en sneller laten werken van een applicatie.
-
-### Deze leertaak hoort bij het gedragscriterium:
-
-M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving.
-C: Je kan ontwerpkeuzes, eigen ideeën en producten begrijpelijk overbrengen aan belanghebbenden.
-
-### Deze opdracht is done als:
-
-- [ ] Je hebt de vier performance optimalisaties geïmplementeerd
-- [ ] Je hebt de performance optimalisatie geanalyseerd met een [Performance Audit](https://github.com/fdnd-task/performance-matters-performance-audit) vooraf én achteraf.
-- [ ] Je hebt de performance optimalisatie gedocumenteerd in de Readme van de leertaak.
-
+*Definitions of done*

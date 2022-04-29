@@ -1,15 +1,13 @@
-<%- include('./partials/head') %>
+<%- include('partials/header.ejs') %>
 
-<header>
-  <h1>Performance Optimalisatie</h1>
-</header>
+  <main>
+    <!-- <img src="/assets/scrollbook-logo.png" alt="Scrollbook Logo"> -->
+  </main>
+  <noscript>
+    <p>This site doesn't work without JavaScript.</p>
+    <img src="/assets/noscript.svg" alt="noscript">
+  </noscript>
+  <script src="/scripts/three.js" type="module"></script>
 
-<main>
-  <ul>
-  <% for (let i=99; i > 0;  i--) { %>
-    <li><%= i %> bottles of beer on the wall, <%= i %> bottles of beer... If one of those bottles would happen to fall</li>
-  <% } %>
-</main>
-</ul>
 
-<%- include('./partials/foot') %>
+  <%- include('partials/footer.ejs') %>

@@ -1,35 +1,31 @@
 {
-  "name": "performance-matters-serverside-optimization",
+  "name": "the-web-is-for-everyone-scrollbook",
   "version": "1.0.0",
-  "description": "Een deeltaak waarin je drie server-side performance optimalisaties toepast op jouw project.",
-  "main": "main.js",
+  "description": "📚 Scrollbook Dashboard application made with NodeJS, Express and EJS.",
+  "main": "app.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fdnd-task/performance-matters-serverside-optimization.git"
+    "url": "git+https://github.com/JustinLung/the-web-is-for-everyone-scrollbook.git"
   },
-  "keywords": [
-    "node",
-    "express",
-    "compression",
-    "postcss",
-    "cache-headers"
-  ],
-  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
-  "license": "GPL-3.0",
+  "keywords": ["Scrollbook", "Scrollbook Dashboard", "NodeJS", "Express"],
+  "author": "Daan Korver & Justin Lung",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fdnd-task/performance-matters-serverside-optimization/issues"
+    "url": "https://github.com/JustinLung/the-web-is-for-everyone-scrollbook/issues"
   },
-  "homepage": "https://github.com/fdnd-task/performance-matters-serverside-optimization#readme",
+  "homepage": "https://github.com/JustinLung/the-web-is-for-everyone-scrollbook#readme",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "ejs": "^3.1.7",
-    "express": "^4.18.0"
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
