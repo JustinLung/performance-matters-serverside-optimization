@@ -3,6 +3,7 @@
 # 🎉 Performance Matters Scrollbook
 Server Side Performance voor Scrollbook
 
+
 ## 🍿 Serverside Performance Optimalisatie
 Beschrijf de website die je hebt geoptimaliseerd, voeg screenshots van de performance audit voor en na het uitvoeren en beschrijf de verbeterde performance. Met andere woorden, welke winst heb je behaald door dit allemaal te doen! Voeg de url en een screenshot van de geoptimaliseerde website toe. 
 
