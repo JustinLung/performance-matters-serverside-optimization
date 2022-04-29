@@ -63,7 +63,6 @@ async function setGroup() {
   const books = await getAllBooks()
   for (let i = 0; i < books.length; i++) {
     const material = new THREE.MeshBasicMaterial({
-      //map: loader.load('/assets/ipad.png'),
       map: loader.load(`https://raw.githubusercontent.com/JustinLung/the-web-is-for-everyone-scrollbook/${books[i].book_cover}`),
       transparent: true,
     })
@@ -128,24 +127,6 @@ function onMouseClick(event) {
   if (intersects.length > 0) {
     intersects[0].object.callback()
   }
-}
-
-function getBookPosition(index) {
-  const EVEN_ROW_LENGTH = 3
-  const ODD_ROW_LENGTH = 4
-
-  const subRow = Math.floor(index / (EVEN_ROW_LENGTH + ODD_ROW_LENGTH))
-  const subColumn = index % (EVEN_ROW_LENGTH + ODD_ROW_LENGTH)
-
-  const evenRow = subColumn < EVEN_ROW_LENGTH
-
-  let row = subRow * 2
-  if (!evenRow) row++
-
-  let column = subColumn
-  if (!evenRow) column -= EVEN_ROW_LENGTH
-
-  return [row, column]
 }
 
 function getBookPositionCool(index, sequence) {

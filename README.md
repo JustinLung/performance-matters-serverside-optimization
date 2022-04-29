@@ -4,7 +4,17 @@
 Server Side Performance voor Scrollbook
 
 ## 🍿 Serverside Performance Optimalisatie
-Beschrijf de website die je hebt geoptimaliseerd, voeg screenshots van de performance audit voor en na het uitvoeren en beschrijf de verbeterde performance. Met andere woorden, welke winst heb je behaald door dit allemaal te doen! Voeg de url en een screenshot van de geoptimaliseerde website toe. 
+Voor deze deeltaak, heb ik de website van de Scrollbook Bookshelf geoptimaliseerd die gemaakt is met behulp van Three.js EJS, NodeJS en Express. Hierbij heb ik een performance audit gedaan met behulp van Lighthouse en heb ik ook gekeken naar het network tabje hoe groot mijn project is.
+
+**Before**
+![Lighthouse Scrollbook Before](https://github.com/JustinLung/performance-matters-serverside-optimization/blob/main/docs/lighthouse-performance.png?raw=true)
+
+![Network Tab Before](https://github.com/JustinLung/performance-matters-serverside-optimization/blob/main/docs/network-tab.png?raw=true)
+
+**After**
+![Lighthouse Scrollbook After]()
+
+![Network Tab After]()
 
 ### 🙊 Minifying
 Beschrijf welke bestanden je _minified_ hebt en waarom je dat gedaan hebt. Als je er bewust voor kiest bepaalde bestanden niet te minify-en dan beschrijf je ook waarom je dat niet gedaan hebt.
