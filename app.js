@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
-const app = express()
 const compression = require('compression')
+const app = express()
 const PORT = process.env.PORT || 3000
 
 //Routes
@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname + '/views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, '/public')))
 
-// Cache Headers 
+// Cache Headers
 app.use((req, res, next) => {
   res.set('Cache-control', 'public, max-age=300')
   next()
