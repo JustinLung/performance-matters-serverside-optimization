@@ -9,7 +9,6 @@ router
   const book = await getBookById(id)
   const nextBook = await getBookById(id + 1)
   const previousBook = await getBookById(id - 1)
-  console.log(nextBook);
   res.render('detail', {
     title: id,
     next: nextBook,

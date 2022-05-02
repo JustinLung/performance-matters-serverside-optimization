@@ -20,11 +20,10 @@ Voor deze deeltaak, heb ik de website van de Scrollbook Bookshelf geoptimaliseer
 Met behulp van [🪄 PostCSS](https://postcss.org/), heb ik de CSS geminified, zodat mijn applicatie sneller werkt.
 
 ### 🦈 Code splitting
-Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat gedaan hebt. Schrijf vanuit het idee van daadwerkelijk gebruikte code per pagina.
+Zelf heb ik niet in mijn client-side Javascript ge-code split, omdat er geen dode code is die wij niet gebruiken. Echter heb ik wel in mijn HTML een code-split gedaan. Aangezien libraries zoals three.js en GSAP niet in worden geladen op de detail page, worden deze nu alleen maar op de index ingeladen.
 
 ### 😺 Caching
-Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier doet.
-
+Zelf heb ik de cache-control methode gebruikt, zodat er niet elke keer een request gedaan wordt naar de server en hierdoor maar om de 5 minuten een request wordt gedaan. 
 
 ### 🍊 Compressie
 Met behulp van de [🚄 express compression](http://expressjs.com/en/resources/middleware/compression.html) package, omdat het erg makkelijk is te gebruiken.
