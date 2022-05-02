@@ -30,9 +30,9 @@ Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier d
 Met behulp van de [🚄 express compression](http://expressjs.com/en/resources/middleware/compression.html) package, omdat het erg makkelijk is te gebruiken.
 
 ## 🌲 Bronnen
-[PostCSS](https://postcss.org/)
-[Cache headers in Express](https://regbrain.com/article/cache-headers-express-js)
-[Express Compression](http://expressjs.com/en/resources/middleware/compression.html)
+- [PostCSS](https://postcss.org/)
+- [Cache headers in Express](https://regbrain.com/article/cache-headers-express-js)
+- [Express Compression](http://expressjs.com/en/resources/middleware/compression.html)
 
 ## 🚀 Licentie
 
