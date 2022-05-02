@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 })
 
 // compress all response
-app.use(compression)
+app.use(compression())
 
 app.use('/', indexRoute)
 app.use('/book', detailRoute)
