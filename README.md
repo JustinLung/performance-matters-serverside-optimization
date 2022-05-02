@@ -12,12 +12,12 @@ Voor deze deeltaak, heb ik de website van de Scrollbook Bookshelf geoptimaliseer
 ![Network Tab Before](https://github.com/JustinLung/performance-matters-serverside-optimization/blob/main/docs/network-tab.png?raw=true)
 
 **After**
-![Lighthouse Scrollbook After]()
+![Lighthouse Scrollbook After](https://github.com/JustinLung/performance-matters-serverside-optimization/blob/main/docs/lighthouse-performance-after.png?raw=true)
 
-![Network Tab After]()
+![Network Tab After](https://github.com/JustinLung/performance-matters-serverside-optimization/blob/main/docs/network-tab-after.png?raw=true)
 
 ### 🙊 Minifying
-Beschrijf welke bestanden je _minified_ hebt en waarom je dat gedaan hebt. Als je er bewust voor kiest bepaalde bestanden niet te minify-en dan beschrijf je ook waarom je dat niet gedaan hebt.
+Met behulp van [🪄 PostCSS](https://postcss.org/), heb ik de CSS geminified, zodat mijn applicatie sneller werkt.
 
 ### 🦈 Code splitting
 Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat gedaan hebt. Schrijf vanuit het idee van daadwerkelijk gebruikte code per pagina.
@@ -25,11 +25,14 @@ Beschrijf welke front-end javascript bestanden je gesplit hebt en waarom je dat 
 ### 😺 Caching
 Beschrijf welke caching opties je gekozen hebt en waarom je dat op deze manier doet.
 
+
 ### 🍊 Compressie
-Beschrijf hoe je compressie hebt ingezet en waarom je die keuze hebt gemaakt.
+Met behulp van de [🚄 express compression](http://expressjs.com/en/resources/middleware/compression.html) package, omdat het erg makkelijk is te gebruiken.
 
 ## 🌲 Bronnen
-Beschrijf de door jou gebruikte bronnen om bovenstaande stappen uit te voeren.
+[PostCSS](https://postcss.org/)
+[Cache headers in Express](https://regbrain.com/article/cache-headers-express-js)
+[Express Compression](http://expressjs.com/en/resources/middleware/compression.html)
 
 ## 🚀 Licentie
 
